@@ -5,4 +5,4 @@ pagina completamente funcional para los planes que tengo a futuro.
 
 Se que esto aun no es nada pero lo mejorare lo prometo :).
 
-Mchas Gacias.
+Muchas Gracias.
