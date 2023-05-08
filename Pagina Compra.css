@@ -1,0 +1,123 @@
+body{
+    background-color: rgb(218, 218, 218);
+}
+
+.inactivo{
+    display: none;
+}
+/*Parte del encabezado*/
+
+.encabezado{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.categorias-genero{
+    justify-content: center;
+    gap: 120px;
+}
+
+.categoria{
+    border: none;
+    color: black;
+    font-size: 30px;
+    background-color: rgb(218, 218, 218);
+}
+
+.categoria:hover{
+    border-bottom:solid 5px rgb(0, 27, 145);
+    border-radius: 5px;
+}
+
+/*Iconos de carrrito, favoritos y usuario */
+.iconos img{
+    gap: 20px;
+}
+
+
+/*Zona de imagen, descripcion de producto*/
+.contenedor-detalles-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.imagen-producto{
+    width: 800px;
+    border: 3px solid black;
+}
+
+.nombre-producto{
+    font-size: 45px;
+}
+
+.precio-producto{
+    font-size: 30px;
+    margin-top: -40px;
+}
+.descripcion{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.descripcion-producto{
+    font-size: 20px;
+    padding: 15px;
+    width: 400px;
+    border: 1px solid black;
+}
+
+/*----------------------------------------------*/
+
+/*tallas disponibles para el producto*/
+.tallas{
+    width: 115px;
+    height: 80px;
+}
+
+.button-talla{
+    border-radius: 10px;
+    font-size: 20px;
+    width: 55px;
+    height: 40px;
+    background-color: rgb(218, 218, 218);
+}
+
+.button-talla:hover{
+    background-color: rgb(218, 218, 218);
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 1px 1px 3px black;
+}
+
+/*----------------------------------------------*/
+
+/*Parte de Compra y favortios*/
+.btn-comprar{
+    font-size: 70px;
+    background-color: black;
+    color: rgb(218, 218, 218);
+    padding: 10px;
+    width: 400px;
+    margin-top: 20px;
+}
+
+.btn-comprar:hover{
+    box-shadow: 1px 1px 5px black;
+    transform:scale(1.1);
+}
+
+.prendas-favoritas{
+    background-color: rgb(218, 218, 218);
+    font-size: 20px;
+}
+
+.prendas-favoritas:hover{
+    box-shadow: 1px 1px 3px black;
+    transform: scale(1.1);
+}
+
+/*----------------------------------------------*/

@@ -1,0 +1,86 @@
+body{
+    background-color: rgb(218, 218, 218);
+}
+
+.inactivo{
+    display: none;
+}
+/*Header de favoritos*/
+.conetendeor-header-favoritos{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.titulo-favoritos{
+    width: 100%;
+    text-align: center;
+}
+.btn-regresar-favoritos{
+    background-color: black;
+    border-radius: 50%;
+    color: rgb(218, 218, 218);
+    width: 40px;
+    height: 40px;
+}
+
+.btn-regresar-favoritos:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 3px black;
+}
+
+/*Zona de productos agregados a Favoritos*/
+.section-productos-favoritos{
+    width: 95%;
+    height: 60vh;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 400px 350px;
+    justify-content: space-evenly;
+}
+
+.contenedor-producto-favoritos{
+    width: 245px; 
+    height: 266px; 
+    display: flex;
+    place-items: center;
+    position: relative;
+    flex-direction:column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.img-productos-favoritos{
+    border: 2px solid black;
+    height: 300px;
+}
+
+.content-detalles-favoritos{
+    width: 300px;
+    height: 200px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-tittle-img-favoritos{
+    height: 10px;
+}
+
+.btn-eliminar-favoritos{
+    border: none;
+    background-color: rgb(218, 218, 218);
+    font-size: 25px;
+    color: brown;
+}
+
+.btn-eliminar-favoritos:hover{
+    background-color: rgba(165, 42, 42, 0.363);
+    border: 1px solid black;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 3px black;
+}

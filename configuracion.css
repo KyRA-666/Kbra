@@ -1,0 +1,97 @@
+body{
+    background-color:rgb(218, 218, 218) ;
+}
+
+/*Boton de regresar*/
+.btnRegresar{
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: block;
+}
+.btnRegresar:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 3px black;
+}
+
+/*Seccion principal de la informacion basica*/
+.informacion-principal{
+    margin-top: 10px;
+    display: flex;
+    flex-direction:row;
+    gap: 50px;
+}
+
+.info-usuario{
+    font-size: 30px;
+}
+
+.ft-perfil-usuario{
+    width: 500px;
+}
+
+/*Secciones Para cambar la informacion*/
+.sections-nuevo{
+    display: flex;
+    flex-direction: row;
+    gap: 30vh;
+}
+
+.section-contraseña{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    padding: 20px;
+    justify-content: center;
+}
+.section-correo{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.section-correo::before{
+    content: "";
+    display: inline;
+    position: absolute;
+    height: 500px;
+    width: 2px;
+    margin-left: -100px;
+    vertical-align: middle;
+    background-color: rgb(0, 0, 0);
+}
+
+.section-direccion{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.section-direccion:before{
+    content: "";
+    display: inline;
+    position: absolute;
+    height: 500px;
+    width: 2px;
+    margin-left: -100px;
+    vertical-align: middle;
+    background-color: rgb(0, 0, 0);
+}
+
+.btn-conf{
+    background-color: black;
+    color: white;
+    height: 50px;
+    font-size: 40px;
+}
+
+.btn-conf:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px black ;
+}

@@ -1,0 +1,117 @@
+body{
+    background-color: rgb(218, 218, 218);
+}
+/*Encabezado Carrito*/
+.encabezado-carrito{
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+}
+
+.btn-regresar-carrito{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.btn-regresar-carrito:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 3px black;
+}
+
+/*Zona De productos agregados al carrito*/
+.contenedor-carrito{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.prodcutos-carrito{
+    display: flex;
+    flex-direction: column;
+}
+.producto-agregado{
+    display: flex;
+    padding: 10px;
+}
+
+.img-producto-carrito{
+    width: 450px;
+    border: 1px solid black;
+}
+
+.name-producto-carrito{
+    font-size: 30px;
+}
+
+.precio-productp-carrito{
+    font-size: 30px;
+}
+
+/*Parte de pago en el carrito*/
+.productos-agregados-carrito{
+    font-size: 25px;
+}
+
+.tittle-section-pagos-carrito{
+    font-size: 25px;
+}
+
+.zona-pago-carrito{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.zona-pago-carrito::before{
+    content: "";
+    display: inline;
+    position: absolute;
+    height: 1100px;
+    width: 2px;
+    margin-left: -100px;
+    vertical-align: middle;
+    background-color: rgb(0, 0, 0);
+}
+
+.logo-metodo-carrito{
+    width: 50px;
+}
+
+.pago-info-carrito{
+    border: none;
+    font-size: 20px;
+    background-color: whitesmoke;
+    outline: none;
+    padding: 20px;
+}
+
+.pago-info-carrito:hover{
+    border-bottom:solid 5px rgb(0, 0, 0);
+    border-radius: 1px;
+}
+
+.precio-carrito{
+    font-size: 25px;
+}
+
+.btn-comp-carrito{
+    height: 70px;
+    width: 300px;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.btn-comp-carrito:hover{
+    box-shadow: 0px 0px 3px black;
+    transform: scale(1.1);
+}
+
+.inactivo{
+    display: none;
+}

@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="Pag-Principal.css">
+  <link rel="stylesheet" href="Estilos.Inicio,Registro,Olvidar.css">
+  <link rel="stylesheet" href="favoritos.css">
+  <link rel="stylesheet" href="Carrito.css">
+  <link rel="stylesheet" href="Estilos-Categorias.css">
+  <link rel="stylesheet" href="configuracion.css">
+  <title>Kbra Tienda de ropa</title>
+  <link rel="icon" href="IMGs/K.png">
+
+</head>
+
+<body>
+
+  <div class="contenedor-inicio-registro-olvidar">
+
+    <div class="logo-desc-principal">
+      <img class="imgk" src="IMGs/logo Kbra.png" alt="">
+      <p class="textok">"No tienes que gastar de mas para lucir bien"</p>
+    </div>
+
+    <!--Parte de inicio de seion-->
+    <div class="pagina-inicio ">
+      <section class="contenedor-inicio">
+        <img src="IMGs/k blanco.png" alt="">
+        <form action="" class="formulario-inicio">
+          <input type="text" placeholder="Correo Electronico" id="correo-inicio" class="input">
+          <input type="password" id="contraseña-inicio" class="input" placeholder="Contraseña">
+          <button type="button" class="boton boton-primario" id="btn-ingresar"> Ingresar</button>
+        </form>
+
+        <button type="button" class="btn-recuperar" id="btn-recuperar-contraseña">¿Olvidaste tu contraseña?</button>
+        <p id="mensaje-inicio"></p>
+        <button class="boton boton-secundario" id="btn-registrar">Registrar</button>
+      </section>
+    </div>
+
+    <!------------------------------------------------------------------------------------------->
+
+    <!--Parte de registro-->
+    <div class="pagina-registro inactivo">
+      <section class="contenedor-inicio">
+        <img src="IMGs/k blanco.png" alt="">
+        <button type="button" id="btnregresar" class="btn-Regresar">< </button>
+            <form action="" class="formulario-registro">
+              <input type="text" id="correo-registro" placeholder="Andress@example.com" class="input">
+              <input type="password" id="contraseña-registro" placeholder="Contraseña" class="input">
+              <input type="date" id="fecha-registro" placeholder="fecha de nacimeinto" class="input">
+              <input type="text" name="" id="nombre-registro" placeholder="Nombre Completo" class="input">
+              <input type="number" name="" id="celular-registro" placeholder="Numero de Telefono" class="input">
+              <button type="button" class="boton boton-primario" id="btn-crear"> Crear Cuenta</button>
+            </form>
+      </section>
+    </div>
+
+    <!------------------------------------------------------------------------------------------->
+
+    <!--Parte de recuperar contraseña-->
+    <div class="pagina-olvidar inactivo">
+      <section class="contenedor-inicio">
+        <img src="IMGs/k blanco.png" alt="">
+        <button type="button" id="btnRegresarOlvidar" class="btn-regresar"> < </button>
+            <form action="" class="form-olvidar">
+              <input type="text" class="correo-recuperar-espacio" placeholder="Ingrese su correo electronico"
+                id="CorreoOlvidar">
+              <input type="date" name="fecha" class="fechaRecuperar-espacio" id="fecha-recuperar">
+            </form>
+            <p id="mensaje-recuperar"></p>
+            <button type="button" class="btnBuscar" id="btn-buscar-cuenta">Buscar Cuenta</button>
+      </section>
+    </div>
+
+  </div>
+
+  <!------------------------------------------------------------------------------------------->
+
+
+  <!--Barra de navegacio "Buscar"-->
+  <form class="searching inactivo">
+    <header class="header">
+      <a href="#"><img src="IMGs/logo Kbra.png" alt="Logo Kbra" class="logok"></a>
+    </header>
+
+    <div>
+      <input class="texto-input" type="text" placeholder="Que Deseas Buscar Hoy?">
+      <button class="btn-buscar" type="submit">Buscar</button>
+    </div>
+
+    <nav class="iconos">
+      <img src="IMGs/carrito-de-compras (4).png" alt="Carrito Compras Icono" class="carrito-icon">
+
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="IMGs/perfil.png" alt="">
+        </button>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item item-cerrar-sesion" >Iniciar Sesion / Cerrar Sesion</li>
+          <li><img src="IMGs/Img Ejemplo 500x500.jpg" alt="Imagen Del Usuario" class="img-dropdown-usuario"></li>
+          <li class="dropdown-item" >Andress</li>
+          <li class="dropdown-item" >Andres@example.com</li>
+          <li class="dropdown-item Btn-Acceder-Configuracion" >Configuracion</li>
+        </ul>
+      </div>
+    </nav>
+
+  </form>
+
+  <!------------------------------------------------------------------------------------------->
+  <!--Pagina principal-->
+  <section class="Contenedor-total-articulos inactivo">
+
+    <div class="pagina-principal">
+      <!--Parte del carrousel-->
+      <div class="carousel-container">
+
+        <!--Parte de articulos-->
+        <div class="prendasNav">
+          <select class="btn-prendas">
+            <option>Prendas</option>
+            <option class="btn-producto" id="chaquetas-principal">-Chaquetas</option>
+            <option class="btn-producto" id="camisas-principal">-Camisas</option>
+            <option class="btn-producto" id="pantalones-principal">-Pantalones</option>
+            <option class="btn-producto" id="bermudas-principal">-Bermudas</option>
+            <option class="btn-producto" id="ropainterior-principal">-Ropa Interior</button>
+          </select>
+
+        </div>
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="IMGs/ImgCaousel3.jpeg" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="IMGs/ImgCarrousel5.jpg" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="IMGs/ImgCarrousel.jpeg" class="d-block" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!------------------------------------------------------------------------------------------->
+
+      <!--Parte del switch de cambio de genero-->
+      <div class="cuadros">
+        <section class="contenedor-productos">
+          <h3 class="producto">Productos</h3>
+
+          <div class="switch">
+            <p class="switch-hombre">Mujer</p>
+            <input type="checkbox" id="check">
+            <label for="check"></label>
+            <p class="switch-mujer">Hombre</p>
+          </div>
+        </section>
+      </div>
+      <section class="parte-mujer">
+
+        <div class="contenedor-producto">
+          <img class="img-productos" src="IMGs/destacados mujer 1.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img">Camisa Manga Corta</h3>
+            <p class="precio-producto">$200000</p>
+          </div>
+        </div>
+
+        <div class="contenedor-producto">
+          <img class="img-productos" src="IMGs/destacados mujer 2.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img">Conjunto Black & White</h3>
+            <p class="precio-producto">$200000</p>
+          </div>
+        </div>
+
+        <div class="contenedor-producto">
+          <img class="img-productos" src="IMGs/destacados mujer 3.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img">Vestido</h3>
+            <p class="precio-producto">$200000</p>
+          </div>
+        </div>
+
+        <div class="contenedor-producto">
+          <img class="img-productos" src="IMGs/destacados mujer 4.jpg" alt="">
+          <div class=" content-detalles">
+            <h3 class="sub-tittle-img">Buso Multicolor</h3>
+            <p class="precio-producto">$200000</p>
+          </div>
+
+        </div>
+        <div class="contenedor-producto">
+          <img class="img-productos" src="IMGs/destacados mujer 5.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img">Camisa Manga Corta</h3>
+            <p class="precio-producto">$200000</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="parte-hombre inactivo">
+        <div class="contenedor-producto">
+          <img class="img-productos" src="IMGs/destacados hombre 1.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img">Camisa Verde laroh</h3>
+            <p class="precio-producto">$200000</p>
+          </div>
+        </div>
+
+        <div class="contenedor-producto">
+          <img class="img-productos" src="IMGs/destacados hombre 2.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img">Camisa Beige</h3>
+            <p class="precio-producto">$200000</p>
+          </div>
+
+        </div>
+
+        <div class="contenedor-producto">
+          <img class="img-productos" src="IMGs/destacados hombre 3.jpg" alt="">
+          <div class=" content-detalles">
+            <h3 class="sub-tittle-img">Buso Cuadros</h3>
+            <p class="precio-producto">$200000</p>
+          </div>
+
+        </div>
+        <div class="contenedor-producto">
+          <img class="img-productos" src="IMGs/destacados hombre 4.jpg" alt="">
+          <div class=" content-detalles">
+            <h3 class="sub-tittle-img">Camisa Dragon Tokio</h3>
+            <p class="precio-producto">$200000</p>
+          </div>
+
+        </div>
+        <div class="contenedor-producto">
+          <img class="img-productos" src="IMGs/destacados hombre 5.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img">Pantalon Cuadros</h3>
+            <p class="precio-producto">$200000</p>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!--parte de categorias-->
+    <!--Chaquetas-->
+
+    <div class="contenedor-chaquetas categorias inactivo">
+      <h1 class="header">Chaquetas</h1>
+      <div class="switch">
+        <p class="genero hombre">Mujer</p>
+        <input type="checkbox" id="check-chaquetas">
+        <label for="check-chaquetas"></label>
+        <p class="genero mujer">Hombre</p>
+      </div>
+
+      <div class="contendor-productos-categorias">
+        <section class="contendor-productos-categorias">
+          <section class="parte-mujer" id="parte-mujer-chaquetas">
+          <article class="contenedor-producto">
+            <img class="img-productos" src="Chaquetas/Chaqueta Mujer.jpg" alt="">
+            <div class="content-detalles">
+              <h3 class="sub-tittle-img" >Chaqueta latex</h3>
+              <p class="precio-producto">200000</p>
+            </div>
+          </article>
+          
+          <article class="contenedor-producto">
+            <img class="img-productos" src="Chaquetas/Chaqueta Mujer 1.jpg" alt="">
+            <div class="content-detalles">
+              <h3 class="sub-tittle-img" >Chaqueta elegante</h3>
+              <p class="precio-producto">350000</p>
+            </div>
+          </article>
+          
+          <article class="contenedor-producto">
+            <img class="img-productos" src="Chaquetas/Chaqueta Mujer 2.jpg" alt="">
+            <div class="content-detalles">
+              <h3 class="sub-tittle-img" >Camisa Invierno</h3>
+              <p class="precio-producto">COP 200.000</p>
+            </div>
+          </article>
+          
+          <article class="contenedor-producto">
+            <img class="img-productos" src="Chaquetas/Chaqueta mujer3.jpg" alt="">
+            <div class="content-detalles">
+              <h3 class="sub-tittle-img" >Camisa Con Perlas</h3>
+              <p class="precio-producto">COP 200.000</p>
+            </div>
+          </article>
+      
+          <article class="contenedor-producto">
+            <img class="img-productos" src="Chaquetas/Chaqueta Mujer 4.jpg" alt="">
+            <div class="content-detalles">
+              <h3 class="sub-tittle-img" >Chaqueta blackpink</h3>
+              <p class="precio-producto">170000</p>
+            </div>
+          </article>
+          
+          <article class="contenedor-producto">
+            <img class="img-productos" src="Chaquetas/Chaqueta Mujer 5.jpg" alt="">
+            <div class="content-detalles">
+              <h3 class="sub-tittle-img" >Gaban a cuadros</h3>
+              <p class="precio-producto">135000</p>
+            </div>
+          </article>
+      
+          <article class="contenedor-producto">
+            <img class="img-productos" src="Chaquetas/Chaqueta Mujer 6.jpg" alt="">
+            <div class="content-detalles">
+              <h3 class="sub-tittle-img" >Chaqueta rockera</h3>
+              <p class="precio-producto">320000</p>
+            </div>
+          </article>
+          
+          <article class="contenedor-producto">
+            <img class="img-productos" src="Chaquetas/Chaqueta Mujer 7.jpg" alt="">
+            <div class="content-detalles">
+              <h3 class="sub-tittle-img" >Blazer gris</h3>
+              <p class="precio-producto">180000</p>
+            </div>
+          </article>
+      
+          <article class="contenedor-producto">
+            <img class="img-productos" src="Chaquetas/Chaqueta Mujer 8.jpg" alt="">
+            <div class="content-detalles">
+              <h3 class="sub-tittle-img" >Chaqueta cuero corta</h3>
+              <p class="precio-producto">330000</p>
+            </div>
+          </article>
+      
+          <article class="contenedor-producto">
+            <img class="img-productos" src="Chaquetas/Chaqueta Mujer 9.jpg" alt="">
+            <div class="content-detalles">
+              <h3 class="sub-tittle-img" >Chaqueta accesorios </h3>
+              <p class="precio-producto">260000</p>
+            </div>
+          </article>
+      
+        </section>
+      
+          <section class="parte-hombre inactivo" id="parte-hombre-chaquetas">
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Chaquetas/Chaqueta Hombre.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Chaqueta oscura</h3>
+                <p class="precio-producto">180000</p>
+              </div>
+            </article>
+      
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Chaquetas/Chaqueta Hombre 1.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Chaqueta Northface</h3>
+                <p class="precio-producto">200000</p>
+              </div>
+      
+            </article>
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Chaquetas/Chaqueta Hombre 2.jpg" alt="">
+              <div class=" content-detalles">
+                <h3 class="sub-tittle-img">Chaqueta Aestethic</h3>
+                <p class="precio-producto">200000</p>
+              </div>
+      
+            </article>
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Chaquetas/Chaqueta Hombre 3.jpg" alt="">
+              <div class=" content-detalles">
+                <h3 class="sub-tittle-img">Chaqueta casual</h3>
+                <p class="precio-producto">230000</p>
+              </div>
+            </article>
+      
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Chaquetas/Chaqueta Hombre 4.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Chaqueta black & white</h3>
+                <p class="precio-producto">90000</p>
+              </div>
+            </article>
+      
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Chaquetas/Chaqueta Hombre 5.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Chaqueta de noche</h3>
+                <p class="precio-producto">400000</p>
+              </div>
+            </article>
+      
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Chaquetas/Chaqueta Hombre 6.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Chaqueta oscura</h3>
+                <p class="precio-producto">220000</p>
+              </div>
+            </article>
+      
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Chaquetas/Chaqueta Hombre 7.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Chaquet elegante</h3>
+                <p class="precio-producto">500000</p>
+              </div>
+            </article>
+      
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Chaquetas/Chaqueta Hombre 8.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Camisa Street</h3>
+                <p class="precio-producto">300000</p>
+              </div>
+            </article>
+      
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Chaquetas/Chaqueta Hombre 9.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Chaqueta elegante</h3>
+                <p class="precio-producto">180000</p>
+              </div>
+            </article>
+      
+          </section>
+        </section>
+
+      </div>
+    </div>
+
+    <!--Camisas-->
+    <div class="contenedor-camisas categorias inactivo">
+      <div class="pagina-categorias">
+        <div class="switch">
+          <p class="genero hombre">Mujer</p>
+          <input type="checkbox" id="check-camisas">
+          <label for="check-camisas"></label>
+          <p class="genero mujer">Hombre</p>
+        </div>
+
+        <section class="contendor-productos-categorias">
+          <section class="parte-mujer" id="parte-mujer-camisas">
+    <article class="contenedor-producto">
+      <img class="img-productos" src="Camisas/mujer .jpg" alt="">
+      <div class="content-detalles">
+        <h3 class="sub-tittle-img" >Camisa Blanca</h3>
+        <p class="precio-producto">100000</p>
+      </div>
+    </article>
+    
+    <article class="contenedor-producto">
+      <img class="img-productos" src="Camisas/mujer 2.jpg" alt="">
+      <div class="content-detalles">
+        <h3 class="sub-tittle-img" >Camisa black & white</h3>
+        <p class="precio-producto">80000</p>
+      </div>
+    </article>
+    
+    <article class="contenedor-producto">
+      <img class="img-productos" src="Camisas/mujer 3.jpg" alt="">
+      <div class="content-detalles">
+        <h3 class="sub-tittle-img" >Camisa tiro corto</h3>
+        <p class="precio-producto">120000</p>
+      </div>
+    </article>
+    
+    <article class="contenedor-producto">
+      <img class="img-productos" src="Camisas/mujer 4.jpg" alt="">
+      <div class="content-detalles">
+        <h3 class="sub-tittle-img" >Camisa cake</h3>
+        <p class="precio-producto">80000</p>
+      </div>
+    </article>
+
+    <article class="contenedor-producto">
+      <img class="img-productos" src="Camisas/mujer 5.jpg" alt="">
+      <div class="content-detalles">
+        <h3 class="sub-tittle-img" >Camisa elegante lila</h3>
+        <p class="precio-producto">200000</p>
+      </div>
+    </article>
+    
+    <article class="contenedor-producto">
+      <img class="img-productos" src="Camisas/mujer 6.jpg" alt="">
+      <div class="content-detalles">
+        <h3 class="sub-tittle-img" >Camisa tiro corto</h3>
+        <p class="precio-producto">100000</p>
+      </div>
+    </article>
+
+    <article class="contenedor-producto">
+      <img class="img-productos" src="Camisas/mujer 7.jpg" alt="">
+      <div class="content-detalles">
+        <h3 class="sub-tittle-img" >Camisa tiro corto</h3>
+        <p class="precio-producto">60000</p>
+      </div>
+    </article>
+    
+    <article class="contenedor-producto">
+      <img class="img-productos" src="Camisas/mujer 8.jpg" alt="">
+      <div class="content-detalles">
+        <h3 class="sub-tittle-img" >Camisa corta lila</h3>
+        <p class="precio-producto">50000</p>
+      </div>
+    </article>
+
+    <article class="contenedor-producto">
+      <img class="img-productos" src="Camisas/mujer 9.jpg" alt="">
+      <div class="content-detalles">
+        <h3 class="sub-tittle-img" >Camisa corta blanca</h3>
+        <p class="precio-producto">50000</p>
+      </div>
+    </article>
+
+    <article class="contenedor-producto">
+      <img class="img-productos" src="Camisas/mujer 10.jpg" alt="">
+      <div class="content-detalles">
+        <h3 class="sub-tittle-img" >Camisa estilo corto</h3>
+        <p class="precio-producto">120000</p>
+      </div>
+    </article>
+
+  </section>
+
+    <section class="parte-hombre inactivo" id="parte-hombre-camisas">
+      <article class="contenedor-producto">
+        <img class="img-productos" src="Camisas/hombre .jpg" alt="">
+        <div class="content-detalles">
+          <h3 class="sub-tittle-img" >Camisa love gamer</h3>
+          <p class="precio-producto">35000</p>
+        </div>
+      </article>
+      
+      <article class="contenedor-producto">
+        <img class="img-productos" src="Camisas/hombre 2.jpg" alt="">
+        <div class="content-detalles">
+          <h3 class="sub-tittle-img" >Conjunto veraniego</h3>
+          <p class="precio-producto">200000</p>
+        </div>
+      </article>
+      
+      <article class="contenedor-producto">
+        <img class="img-productos" src="Camisas/hombre  3.jpg" alt="">
+        <div class="content-detalles">
+          <h3 class="sub-tittle-img" >Camisa basica multicolor</h3>
+          <p class="precio-producto">45000</p>
+        </div>
+      </article>
+      
+      <article class="contenedor-producto">
+        <img class="img-productos" src="Camisas/hombre 4.jpg" alt="">
+        <div class="content-detalles">
+          <h3 class="sub-tittle-img" >Camisa Polo</h3>
+          <p class="precio-producto">COP 200.000</p>
+        </div>
+      </article>
+  
+      <article class="contenedor-producto">
+        <img class="img-productos" src="Camisas/hombre 5.jpg" alt="">
+        <div class="content-detalles">
+          <h3 class="sub-tittle-img" >Camisa Polo</h3>
+          <p class="precio-producto">COP 200.000</p>
+        </div>
+      </article>
+      
+      <article class="contenedor-producto">
+        <img class="img-productos" src="Camisas/hombre 6.jpg" alt="">
+        <div class="content-detalles">
+          <h3 class="sub-tittle-img" >Camisa Muticolor</h3>
+          <p class="precio-producto">COP 200.000</p>
+        </div>
+      </article>
+  
+      <article class="contenedor-producto">
+        <img class="img-productos" src="Camisas/hombre 7.jpg" alt="">
+        <div class="content-detalles">
+          <h3 class="sub-tittle-img" >Camisa Negra polo</h3>
+          <p class="precio-producto">COP 200.000</p>
+        </div>
+      </article>
+      
+      <article class="contenedor-producto">
+        <img class="img-productos" src="Camisas/hombre 8.jpg" alt="">
+        <div class="content-detalles">
+          <h3 class="sub-tittle-img" >Camisa Polo</h3>
+          <p class="precio-producto">COP 200.000</p>
+        </div>
+      </article>
+  
+      <article class="contenedor-producto">
+        <img class="img-productos" src="Camisas/hombre 9.jpg" alt="">
+        <div class="content-detalles">
+          <h3 class="sub-tittle-img" >Camisa Rayada</h3>
+          <p class="precio-producto">COP 200.000</p>
+        </div>
+      </article>
+  
+      <article class="contenedor-producto">
+        <img class="img-productos" src="Camisas/hombre 10.jpg" alt="">
+        <div class="content-detalles">
+          <h3 class="sub-tittle-img" >Camisa Negra</h3>
+          <p class="precio-producto">COP 200.000</p>
+        </div>
+      </article>
+
+    </section>
+        </section>
+
+      </div>
+    </div>
+
+    <!--Pantalones-->
+    <div class="contenedor-pantalones categorias inactivo">
+      <div class="pagina-categorias">
+        <div class="switch">
+          <p class="genero hombre">Mujer</p>
+          <input type="checkbox" id="check-pantalones">
+          <label for="check-pantalones"></label>
+          <p class="genero mujer">Hombre</p>
+        </div>
+
+        <section class="contendor-productos-categorias">
+
+          <section class="parte-mujer" id="parte-mujer-pantalones">
+            <img class="img-productos" src="Pantalones/mujer 1.jpg" alt="">
+            <div class="content-detalles">
+              <h3 class="sub-tittle-img" >Pantalon cargo gris</h3>
+              <p class="precio-producto">230000</p>
+            </div>
+          </article>
+          
+          <article class="contenedor-producto">
+            <img class="img-productos" src="Pantalones/mujer 2.jpg" alt="">
+            <div class="content-detalles">
+              <h3 class="sub-tittle-img" >Pantalon estampado</h3>
+              <p class="precio-producto">120000</p>
+            </div>
+          </article>
+          
+          <article class="contenedor-producto">
+            <img class="img-productos" src="Pantalones/mujer 3.jpg" alt="">
+            <div class="content-detalles">
+              <h3 class="sub-tittle-img" >Sudadera Adidas</h3>
+              <p class="precio-producto">250000</p>
+            </div>
+          </article>
+          
+          <article class="contenedor-producto">
+            <img class="img-productos" src="Pantalones/mujer 4.jpg" alt="">
+            <div class="content-detalles">
+              <h3 class="sub-tittle-img" >Pantalon cargo mesclilla</h3>
+              <p class="precio-producto">200000</p>
+            </div>
+          </article>
+      
+          <article class="contenedor-producto">
+            <img class="img-productos" src="Pantalones/mujer 5.jpg" alt="">
+            <div class="content-detalles">
+              <h3 class="sub-tittle-img" >Pantalon Cargo Aestethic</h3>
+              <p class="precio-producto">300000</p>
+            </div>
+          </article>
+          
+          <article class="contenedor-producto">
+            <img class="img-productos" src="Pantalones/mujer 6.jpg" alt="">
+            <div class="content-detalles">
+              <h3 class="sub-tittle-img" >Pantalon cargo oscuro</h3>
+              <p class="precio-producto">200000</p>
+            </div>
+          </article>
+      
+          <article class="contenedor-producto">
+            <img class="img-productos" src="Pantalones/mujer 7.jpg" alt="">
+            <div class="content-detalles">
+              <h3 class="sub-tittle-img" >Sudadera Capri</h3>
+              <p class="precio-producto">180000</p>
+            </div>
+          </article>
+          
+          <article class="contenedor-producto">
+            <img class="img-productos" src="Pantalones/mujer 8.jpg" alt="">
+            <div class="content-detalles">
+              <h3 class="sub-tittle-img" >Sudadera Capri Aestetic</h3>
+              <p class="precio-producto">200000</p>
+            </div>
+          </article>
+      
+          <article class="contenedor-producto">
+            <img class="img-productos" src="Pantalones/mujer 9.jpg" alt="">
+            <div class="content-detalles">
+              <h3 class="sub-tittle-img" >Sudadera Astro</h3>
+              <p class="precio-producto">200000</p>
+            </div>
+          </article>
+      
+          <article class="contenedor-producto">
+            <img class="img-productos" src="Pantalones/mujer 10.jpg" alt="">
+            <div class="content-detalles">
+              <h3 class="sub-tittle-img" >Pantalon Formal</h3>
+              <p class="precio-producto">COP 200.000</p>
+            </div>
+          </article> 
+
+          </section>
+
+          <section class="parte-hombre inactivo" id="parte-hombre-pantalones">
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Pantalones/hombre 1.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Pantalon cargo oscuro</h3>
+                <p class="precio-producto">200000</p>
+              </div>
+            </article>
+      
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Pantalones/hombre 2.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Pantalon Cargo</h3>
+                <p class="precio-producto">290000</p>
+              </div>
+      
+            </article>
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Pantalones/hombre 3.jpg" alt="">
+              <div class=" content-detalles">
+                <h3 class="sub-tittle-img">Pantalon capri</h3>
+                <p class="precio-producto">200000</p>
+              </div>
+      
+            </article>
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Pantalones/hombre 4.jpg" alt="">
+              <div class=" content-detalles">
+                <h3 class="sub-tittle-img">Sudadera capri Aestethic</h3>
+                <p class="precio-producto">120000</p>
+              </div>
+            </article>
+      
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Pantalones/hombre 5.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Sudadera capri calaveras</h3>
+                <p class="precio-producto">200000</p>
+              </div>
+            </article>
+      
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Pantalones/hombre 6.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Sudadera oscura</h3>
+                <p class="precio-producto">200000</p>
+              </div>
+            </article>
+      
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Pantalones/hombre 7.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Pantalon cargo</h3>
+                <p class="precio-producto">190000</p>
+              </div>
+            </article>
+      
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Pantalones/hombre 8.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Pantalon Cargo Aestethic</h3>
+                <p class="precio-producto">400000</p>
+              </div>
+            </article>
+      
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Pantalones/hombre 9.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Pantalo Black & White</h3>
+                <p class="precio-producto">500000</p>
+              </div>
+            </article>
+      
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Pantalones/hombre 10.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Pantalon Cargo Jean</h3>
+                <p class="precio-producto">120000</p>
+              </div>
+            </article>
+      
+          </section>
+        </section>
+
+      </div>
+    </div>
+
+    <!--Bermudas-->
+    <div class="contenedor-bermudas categorias inactivo">
+
+
+      <div class="switch">
+        <p class="genero hombre">Mujer</p>
+        <input type="checkbox" id="check-bermudas">
+        <label for="check-bermudas"></label>
+        <p class="genero mujer">Hombre</p>
+      </div>
+      <section class="parte-mujer" id="parte-mujer-bermudas">
+        <article class="contenedor-producto">
+          <img class="img-productos" src="Bermudas/mujer 1.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img" >Conjunto veraniego</h3>
+            <p class="precio-producto">160000</p>
+          </div>
+        </article>
+        
+        <article class="contenedor-producto">
+          <img class="img-productos" src="Bermudas/mujer 2.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img" >Bermuda Corta</h3>
+            <p class="precio-producto">25000</p>
+          </div>
+        </article>
+        
+        <article class="contenedor-producto">
+          <img class="img-productos" src="Bermudas/mujer 3.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img" >Bermuda corta</h3>
+            <p class="precio-producto">25000</p>
+          </div>
+        </article>
+        
+        <article class="contenedor-producto">
+          <img class="img-productos" src="Bermudas/mujer 4.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img" >Bermuda blanca</h3>
+            <p class="precio-producto">25000</p>
+          </div>
+        </article>
+    
+        <article class="contenedor-producto">
+          <img class="img-productos" src="Bermudas/mujer 5.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img" >Bermuda doble tono</h3>
+            <p class="precio-producto">30000</p>
+          </div>
+        </article>
+        
+        <article class="contenedor-producto">
+          <img class="img-productos" src="Bermudas/mujer 6.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img" >Bermuda negra</h3>
+            <p class="precio-producto">30000</p>
+          </div>
+        </article>
+    
+        <article class="contenedor-producto">
+          <img class="img-productos" src="Bermudas/mujer 7.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img" >Bermuda beige</h3>
+            <p class="precio-producto">30000</p>
+          </div>
+        </article>
+        
+        <article class="contenedor-producto">
+          <img class="img-productos" src="Bermudas/mujer 8.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img" >Bermuda nasa</h3>
+            <p class="precio-producto">40000</p>
+          </div>
+        </article>
+    
+        <article class="contenedor-producto">
+          <img class="img-productos" src="Bermudas/mujer 9.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img" >Bermuda Clasica</h3>
+            <p class="precio-producto">COP 200.000</p>
+          </div>
+        </article>
+    
+        <article class="contenedor-producto">
+          <img class="img-productos" src="Bermudas/mujer 10.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img" >Bermuda Botones</h3>
+            <p class="precio-producto">COP 200.000</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="parte-hombre inactivo" id="parte-hombre-bermudas">
+        <article class="contenedor-producto">
+          <img class="img-productos" src="Bermudas/hombre 1.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img">Bermuda anime</h3>
+            <p class="precio-producto">45000</p>
+          </div>
+        </article>
+  
+        <article class="contenedor-producto">
+          <img class="img-productos" src="Bermudas/hombre 2.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img">Bermuda underground</h3>
+            <p class="precio-producto">35000</p>
+          </div>
+  
+        </article>
+        <article class="contenedor-producto">
+          <img class="img-productos" src="Bermudas/hombre 3.jpg" alt="">
+          <div class=" content-detalles">
+            <h3 class="sub-tittle-img">Bermuda mesclilla</h3>
+            <p class="precio-producto">55000</p>
+          </div>
+  
+        </article>
+        <article class="contenedor-producto">
+          <img class="img-productos" src="Bermudas/hombre 4.jpg" alt="">
+          <div class=" content-detalles">
+            <h3 class="sub-tittle-img">Bermuda mesclilla oscura</h3>
+            <p class="precio-producto">48000</p>
+          </div>
+        </article>
+  
+        <article class="contenedor-producto">
+          <img class="img-productos" src="Bermudas/hombre 5.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img">Bermuda beige</h3>
+            <p class="precio-producto">60000</p>
+          </div>
+        </article>
+  
+        <article class="contenedor-producto">
+          <img class="img-productos" src="Bermudas/hombre 6.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img">Bermuda militar</h3>
+            <p class="precio-producto">35000</p>
+          </div>
+        </article>
+  
+        <article class="contenedor-producto">
+          <img class="img-productos" src="Bermudas/hombre  7.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img">Bermuda mesclilla</h3>
+            <p class="precio-producto">30000</p>
+          </div>
+        </article>
+  
+        <article class="contenedor-producto">
+          <img class="img-productos" src="Bermudas/hombre 8.jpg"alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img">Bermuda mesclilla</h3>
+            <p class="precio-producto">30000</p>
+          </div>
+        </article>
+  
+        <article class="contenedor-producto">
+          <img class="img-productos" src="Bermudas/hombre 9.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img">Bermuda gris </h3>
+            <p class="precio-producto">30000</p>
+          </div>
+        </article>
+  
+        <article class="contenedor-producto">
+          <img class="img-productos" src="Bermudas/hombre  10.jpg" alt="">
+          <div class="content-detalles">
+            <h3 class="sub-tittle-img">Bermuda Jean</h3>
+            <p class="precio-producto">COP 200.000</p>
+          </div>
+        </article>
+      </section>
+
+    </div>
+
+    <!--Ropa Interior-->
+    <div class="contenedor-ropainterior categorias inactivo">
+
+      <div class="pagina-categorias">
+        <div class="switch">
+          <p class="genero hombre">Mujer</p>
+          <input type="checkbox" id="check-ropainterior">
+          <label for="check-ropainterior"></label>
+          <p class="genero mujer">Hombre</p>
+        </div>
+
+        <section class="contendor-productos-categorias">
+
+          <section class="parte-mujer" id="parte-mujer-ropainterior">
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Ropa Interior/mujer 1.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img" >Conjunto encaje escarlata</h3>
+                <p class="precio-producto">60000</p>
+              </div>
+            </article>
+            
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Ropa Interior/mujer 2.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img" >Lenceria Oscura</h3>
+                <p class="precio-producto">60000</p>
+              </div>
+            </article>
+            
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Ropa Interior/mujer 3.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img" >Conjunto Diamand</h3>
+                <p class="precio-producto">150000</p>
+              </div>
+            </article>
+            
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Ropa Interior/mujer 4.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img" >Corcete completo</h3>
+                <p class="precio-producto">COP 200.000</p>
+              </div>
+            </article>
+        
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Ropa Interior/mujer 5.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img" >Conjunto Encaje</h3>
+                <p class="precio-producto">180000</p>
+              </div>
+            </article>
+            
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Ropa Interior/mujer 6.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img" >Lenceria Negra</h3>
+                <p class="precio-producto">100000</p>
+              </div>
+            </article>
+        
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Ropa Interior/mujer 7.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img" >Conjunto Kuromi</h3>
+                <p class="precio-producto">200000</p>
+              </div>
+            </article>
+            
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Ropa Interior/mujer 8.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img" >Conjunto completo</h3>
+                <p class="precio-producto">100000</p>
+              </div>
+            </article>
+        
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Ropa Interior/mujer 9.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img" >Conjunto de hilo</h3>
+                <p class="precio-producto">300000</p>
+              </div>
+            </article>
+        
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Ropa Interior/mujer 10.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img" >lenceria transversal</h3>
+                <p class="precio-producto">60000</p>
+              </div>
+            </article>
+
+          </section>
+
+          <section class="parte-hombre inactivo" id="parte-hombre-ropainterior">
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Ropa Interior/hombre 1.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Boxer negros</h3>
+                <p class="precio-producto">30000</p>
+              </div>
+            </article>
+      
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Ropa Interior/hombre 2.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Boxer Killstar</h3>
+                <p class="precio-producto">30000</p>
+              </div>
+      
+            </article>
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Ropa Interior/hombre 3.jpg" alt="">
+              <div class=" content-detalles">
+                <h3 class="sub-tittle-img">Boxer Cacheteros</h3>
+                <p class="precio-producto">40000</p>
+              </div>
+      
+            </article>
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Ropa Interior/hombre 4.jpg" alt="">
+              <div class=" content-detalles">
+                <h3 class="sub-tittle-img">Tanga Masculina</h3>
+                <p class="precio-producto">50000</p>
+              </div>
+            </article>
+      
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Ropa Interior/hombre 5.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Tanga Deadpool</h3>
+                <p class="precio-producto">20000</p>
+              </div>
+            </article>
+      
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Ropa Interior/hombre 6.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Boxer Pokemon</h3>
+                <p class="precio-producto">30000</p>
+              </div>
+            </article>
+      
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Ropa Interior/hombre 7.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Boxer Reebok</h3>
+                <p class="precio-producto">COP 200.000</p>
+              </div>
+            </article>
+      
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Ropa Interior/hombre 8.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Boxer Verde</h3>
+                <p class="precio-producto">COP 200.000</p>
+              </div>
+            </article>
+      
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Ropa Interior/hombre 9.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Boxer Negro</h3>
+                <p class="precio-producto">COP 200.000</p>
+              </div>
+            </article>
+      
+            <article class="contenedor-producto">
+              <img class="img-productos" src="Ropa Interior/hombre 10.jpg" alt="">
+              <div class="content-detalles">
+                <h3 class="sub-tittle-img">Boxer Levis</h3>
+                <p class="precio-producto">COP 200.000</p>
+              </div>
+            </article>
+          </section>
+        </section>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!------------------------------------------------------------------------------------------->
+  <!--Configuracion Del Usuario-->
+
+  <div class="contenedor-configuracion inactivo">
+
+  <button class="btnRegresar configuracion"> < </button>
+
+<div>
+ <section class="informacion-principal"> 
+     <div class="contenedorPerfil-usuario">
+         <img class="ft-perfil-usuario" src="IMGs/Img Ejemplo 500x500.jpg" alt="">
+     </div>
+         
+     <div class="informacion-basica">
+         <p class="info-usuario nombre">Nombre: Andres</p>
+         <p class="info-usuario correo">Correo: Andres@example.com</p>
+         <p class="info-usuario direccion">Direccion: Crr25 #A35</p>
+         <p class="info-usuario numtelefono">Numero De Telefono: 3123664617</p>
+     </div>
+
+ </section>
+</div>
+
+<div class="sections-nuevo">
+
+ <section class="section-contraseña">
+     <h3 class="tittle-contraseña"> Cambiar Contraseña </h3>
+     <p class="cambiarcontraseña actual"> Contraseña Actual: </p>
+     <p class="cambiarcontraseña nueva"> Nueva Contraseña: </p>
+     <p class="cambiarcontraseña actual"> Confirmar Contraseña: </p>
+     <button type="button" class="btn-conf contraseña">Confirmar</button>
+ </section>
+
+ <section class="section-correo">
+     <h3 class="tittle-contraseña"> Cambiar Correo </h3>
+     <p class="cambiarcorreo actual"> Correo Actual: </p>
+     <p class="cambiarcorreo nueva"> Nuevo Correo: </p>
+     <button type="button" class="btn-conf correo">Confirmar</button>
+  </section>
+
+  <section class="section-direccion">
+     <h3 class="tittle-contraseña"> Agregar Direccion </h3>
+     <p class="agregardireccion"> Agregar Direccion: </p>
+     <button type="button" class="btn-conf direccion">Confirmar</button>
+  </section>
+</div>
+</div>
+
+
+  <!------------------------------------------------------------------------------------------->
+  <!--Carrito-->
+
+  <div class="contenedor-principal-carrito inactivo">
+
+    <header class="encabezado-carrito">
+      <h1 class="tittle-carrito">Carrito</h1>
+    </header>
+
+    <button type="button" class="btn-regresar-carrito"> < </button>
+
+        <div class="contenedor-carrito">
+
+          <div class="prodcutos-carrito">
+
+
+            <section class="producto-agregado">
+              <img class="img-producto-carrito" src="" alt="">
+              <h3 class="name-producto-carrito"></h3>
+              <p class="precio-productp-carrito"></p>
+            </section>
+
+          </div>
+
+          <div class="zona-pago-carrito">
+
+
+
+            <section class="metodos-pago-carrito">
+              <h2 class="tittle-section-pagos-carrito">Metodos De Pago</h2>
+
+              <section class="formas-pago-carrito">
+
+                <div class="section-metodo-carrito">
+                  <img class="logo-metodo-carrito" src="IMGs/paypal_icon-icons.com_62739.png" alt="">
+                  <input class="pago-info-carrito" type="text" name="Correo Paypal" placeholder="Correo De PayPal">
+                </div>
+
+                <div class="section-metodo-carrito">
+                  <img class="logo-metodo-carrito" src="IMGs/mastercard_payment_method_icon_142750.png" alt="">
+                  <input class="pago-info-carrito" type="text" name="Nro Tarjeta" placeholder="Nº De Tarjeta">
+                </div>
+
+                <div class="section-metodo-carrito">
+                  <img class="logo-metodo-carrito" src="IMGs/nequi icon.jpg" alt="">
+                  <input class="pago-info-carrito" type="text" name="Num Telefono" placeholder="Nº Telefono">
+                </div>
+
+                <div class="section-metodo-carrito">
+                  <img class="logo-metodo-carrito" src="IMGs/bancolombia icon.jpg" alt="">
+                  <input class="pago-info-carrito" type="text" name="Num Telefono" placeholder="Nº Telefono">
+                </div>
+
+              </section>
+
+              <h3 class="productos-agregados-carrito">Total De Productos Agregados: 3</h3>
+              <h3 class="precio-carrito">Total a Pagar: COP 170.000</h3>
+
+              <button type="button" class="btn-comp-carrito">Comprar</button>
+
+            </section>
+
+          </div>
+
+        </div>
+  </div>
+
+
+  <!------------------------------------------------------------------------------------------->
+
+
+
+  <script src="carrito.js"></script>
+  <script src="index.js"></script>
+  <script src="switch.js"></script>
+  <!------------------------------------------------------------------------------------------->
+</body>
+
+</html>
